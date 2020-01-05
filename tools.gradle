@@ -1,0 +1,29 @@
+// Section: Static Analysis
+
+checkstyle {
+    toolVersion = '8.28'
+    configDirectory = file("$rootProject.projectDir/tool-config/checkstyle")
+    config = resources.text.fromFile(file("tool-config/checkstyle/google_checks.xml"))
+    maxWarnings = 0
+}
+
+pmd {
+    ruleSets = []
+    toolVersion = '6.20.0'
+}
+
+pmdMain {
+    ruleSetFiles = files("tool-config/pmd/pmd-main-rules.xml")
+}
+
+pmdTest {
+    ruleSetFiles = files("tool-config/pmd/pmd-test-rules.xml")
+}
+
+spotbugs {
+    toolVersion = '4.0.0-beta4'
+}
+
+spotbugsTest {
+    excludeFilter = file("$rootProject.projectDir/tool-config/spotbugs/spotbugs-exclude-test.xml")
+}
