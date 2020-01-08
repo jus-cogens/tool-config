@@ -1,0 +1,45 @@
+jacoco {
+    toolVersion = '0.8.5'
+}
+
+ext.coverage = [
+        excludes: [
+                'com/juscogens/*/*Application*',
+                'com/juscogens/*/domain/*',
+        ]
+]
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.8
+            }
+        }
+        rule {
+            limit {
+                counter = 'BRANCH'
+                value = 'COVEREDRATIO'
+                minimum = 0.8
+            }
+        }
+    }
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: coverage.excludes)
+        }))
+    }
+}
+
+jacocoTestReport {
+    afterEvaluate {
+        classDirectories.setFrom(files(classDirectories.files.collect {
+            fileTree(dir: it, exclude: coverage.excludes)
+        }))
+    }
+}
+
+check.finalizedBy jacocoTestCoverageVerification
+jacocoTestCoverageVerification.finalizedBy(jacocoTestReport)
