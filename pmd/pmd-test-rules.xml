@@ -13,6 +13,7 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
     <rule ref="category/java/bestpractices.xml">
         <exclude name="JUnit4TestShouldUseBeforeAnnotation" />
         <exclude name="JUnitAssertionsShouldIncludeMessage" />
+        <exclude name="JUnitTestsShouldIncludeAssert" />
     </rule>
     <rule ref="category/java/codestyle.xml">
         <exclude name="AtLeastOneConstructor" />
@@ -25,6 +26,11 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
     <rule ref="category/java/codestyle.xml/LongVariable">
         <properties>
             <property name="minimum" value="25" />
+        </properties>
+    </rule>
+    <rule ref="category/java/codestyle.xml/MethodNamingConventions">
+        <properties>
+            <property name="junit4TestPattern" value="[a-z][a-zA-Z0-9_]*" />
         </properties>
     </rule>
     <rule ref="category/java/codestyle.xml/ShortVariable">
@@ -49,6 +55,7 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
     </rule>
     <rule ref="category/java/errorprone.xml">
         <exclude name="BeanMembersShouldSerialize" />
+        <exclude name="DataflowAnomalyAnalysis" />
     </rule>
     <rule ref="category/java/multithreading.xml" />
     <rule ref="category/java/performance.xml" />
