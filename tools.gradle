@@ -8,6 +8,7 @@ checkstyle {
 }
 
 pmd {
+    consoleOutput = true
     ruleSets = []
     toolVersion = '6.20.0'
 }
