@@ -33,6 +33,16 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
             <property name="junit4TestPattern" value="[a-z][a-zA-Z0-9_]*" />
         </properties>
     </rule>
+    <rule ref="category/java/codestyle.xml/ClassNamingConventions">
+        <properties>
+            <property name="utilityClassPattern" value="[A-Z][a-zA-Z0-9]+(Utils?|Helper|Constants)" />
+        </properties>
+    </rule>
+    <rule ref="category/java/codestyle.xml/LongVariable">
+        <properties>
+            <property name="minimum" value="40" />
+        </properties>
+    </rule>
     <rule ref="category/java/codestyle.xml/ShortVariable">
         <properties>
             <property name="minimum" value="2" />
@@ -52,6 +62,11 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
     </rule>
     <rule ref="category/java/documentation.xml">
         <exclude name="CommentRequired" />
+    </rule>
+    <rule ref="category/java/documentation.xml/CommentSize">
+        <properties>
+            <property name="maxLineLength" value="120" />
+        </properties>
     </rule>
     <rule ref="category/java/errorprone.xml">
         <exclude name="BeanMembersShouldSerialize" />
