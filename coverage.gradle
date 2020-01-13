@@ -6,6 +6,7 @@ ext.coverage = [
         excludes: [
                 'com/juscogens/*/*Application*',
                 'com/juscogens/*/domain/*',
+                'com/juscogens/*/remote/*',
         ]
 ]
 
