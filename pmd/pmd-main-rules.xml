@@ -19,6 +19,7 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
         <exclude name="DefaultPackage" />
         <exclude name="LocalVariableCouldBeFinal" />
         <exclude name="MethodArgumentCouldBeFinal" />
+        <exclude name="OnlyOneReturn" />
         <exclude name="TooManyStaticImports" />
     </rule>
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
