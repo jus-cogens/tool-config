@@ -14,6 +14,7 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
         <exclude name="JUnit4TestShouldUseBeforeAnnotation" />
         <exclude name="JUnitAssertionsShouldIncludeMessage" />
         <exclude name="JUnitTestsShouldIncludeAssert" />
+        <exclude name="UnusedPrivateField" />
     </rule>
     <rule ref="category/java/codestyle.xml">
         <exclude name="AtLeastOneConstructor" />
@@ -50,6 +51,7 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
     </rule>
     <rule ref="category/java/design.xml">
         <exclude name="DataClass" />
+        <exclude name="ExcessiveImports" />
         <exclude name="ImmutableField" />
         <exclude name="LawOfDemeter" />
         <exclude name="LoosePackageCoupling" />
