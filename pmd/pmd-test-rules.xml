@@ -11,6 +11,7 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
     </description>
 
     <rule ref="category/java/bestpractices.xml">
+        <exclude name="JUnit4TestShouldUseAfterAnnotation" />
         <exclude name="JUnit4TestShouldUseBeforeAnnotation" />
         <exclude name="JUnitAssertionsShouldIncludeMessage" />
         <exclude name="JUnitTestContainsTooManyAsserts"/>
