@@ -11,4 +11,5 @@
             <Bug code="UwF" />
         </Or>
     </Match>
+    <Bug code="MS" />
 </FindBugsFilter>
