@@ -22,7 +22,7 @@ pmdTest {
 }
 
 spotbugs {
-    toolVersion = '4.0.0-beta4'
+    toolVersion = '4.0.1'
 }
 
 spotbugsTest {
