@@ -11,5 +11,11 @@
             <Bug code="UwF" />
         </Or>
     </Match>
+    <!--  Serenity injects actor name, triggering false reports of unused fields -->
+    <Match>
+        <Class name="~.*\.*Steps" />
+        <Bug code="UuF" />
+    </Match>
     <Bug code="MS" />
+    <Bug code="Uuf" />
 </FindBugsFilter>
