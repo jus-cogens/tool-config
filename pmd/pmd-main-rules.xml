@@ -15,7 +15,6 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
         <exclude name="JUnit4TestShouldUseAfterAnnotation" />
         <exclude name="JUnit4TestShouldUseBeforeAnnotation" />
         <exclude name="JUnitAssertionsShouldIncludeMessage" />
-        <exclude name="UnusedPrivateField" />
     </rule>
     <rule ref="category/java/codestyle.xml">
         <exclude name="AtLeastOneConstructor" />
