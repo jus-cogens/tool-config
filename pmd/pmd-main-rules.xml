@@ -10,8 +10,12 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
         Custom rules
     </description>
 
+
     <rule ref="category/java/bestpractices.xml">
+        <exclude name="JUnit4TestShouldUseAfterAnnotation" />
+        <exclude name="JUnit4TestShouldUseBeforeAnnotation" />
         <exclude name="JUnitAssertionsShouldIncludeMessage" />
+        <exclude name="UnusedPrivateField" />
     </rule>
     <rule ref="category/java/codestyle.xml">
         <exclude name="AtLeastOneConstructor" />
