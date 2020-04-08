@@ -23,6 +23,7 @@ pmdTest {
 
 spotbugs {
     toolVersion = '4.0.1'
+    excludeFilter = file("$rootProject.projectDir/tool-config/spotbugs/spotbugs-exclude-main.xml")
 }
 
 spotbugsTest {
