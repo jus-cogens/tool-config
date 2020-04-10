@@ -20,6 +20,7 @@
         <Bug code="UuF" />
     </Match>
     <Bug code="MS" />
-    <Bug code="Uuf" />
     <Bug code="RCN" />  <!-- Redundant Null Check gives false positives in try-with-resources usage -->
+    <Bug code="ST" />
+    <Bug code="Uuf" />
 </FindBugsFilter>
