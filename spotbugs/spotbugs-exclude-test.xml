@@ -12,6 +12,7 @@
         <Or>
             <Bug code="NP" />
             <Bug code="UwF" />
+            <Bug code="UuF" />
         </Or>
     </Match>
     <!--  Serenity injects actor name, triggering false reports of unused fields -->
