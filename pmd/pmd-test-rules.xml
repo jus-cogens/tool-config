@@ -33,6 +33,11 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
             <property name="minimum" value="25" />
         </properties>
     </rule>
+    <rule ref="category/java/codestyle.xml/LinguisticNaming">
+        <properties>
+            <property name="checkGetters" value="false" />
+        </properties>
+    </rule>
     <rule ref="category/java/codestyle.xml/MethodNamingConventions">
         <properties>
             <property name="junit4TestPattern" value="[a-z][a-zA-Z0-9_]*" />
@@ -77,6 +82,7 @@ http://pmd.sourceforge.net/ruleset/2.0.0 ">
     </rule>
     <rule ref="category/java/errorprone.xml">
         <exclude name="BeanMembersShouldSerialize" />
+        <exclude name="CloseResource" />
         <exclude name="DataflowAnomalyAnalysis" />
     </rule>
     <rule ref="category/java/multithreading.xml" />
