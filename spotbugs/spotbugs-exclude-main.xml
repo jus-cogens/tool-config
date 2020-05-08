@@ -19,6 +19,7 @@
         <Class name="~.*\.*Steps" />
         <Bug code="UuF" />
     </Match>
+    <Bug code="RV" />
     <Bug code="Uuf" />
     <Bug code="RCN" />  <!-- Redundant Null Check gives false positives in try-with-resources usage -->
 </FindBugsFilter>
